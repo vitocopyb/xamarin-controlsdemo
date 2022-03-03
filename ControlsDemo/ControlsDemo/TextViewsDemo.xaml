@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.TextViewsDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry
+                x:Name="txtName"
+                Placeholder="Name"
+                PlaceholderColor="DarkGreen"
+                TextChanged="TxtName_TextChanged"
+                Completed="TxtName_Completed"
+            />
+            <Entry
+                Placeholder="Password"
+                IsPassword="True"
+            />
+            <Entry
+                Placeholder="Phone"
+                Keyboard="Telephone"
+            />
+
+            <Editor
+                Placeholder="Editor (TextArea)"
+                AutoSize="TextChanges"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

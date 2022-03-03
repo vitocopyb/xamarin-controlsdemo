@@ -18,7 +18,9 @@ namespace ControlsDemo
             //MainPage = new MainPage();
             //MainPage = new PresentationViewsDemo();
             //MainPage = new CommandsViewsDemo();
-            MainPage = new InputViewsDemo();
+            //MainPage = new InputViewsDemo();
+            //MainPage = new TextViewsDemo();
+            MainPage = new ActivityIndicatorsDemo();
         }
 
         protected override void OnStart()
