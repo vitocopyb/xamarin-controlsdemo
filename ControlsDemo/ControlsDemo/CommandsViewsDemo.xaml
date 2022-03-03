@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.CommandsViewsDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnTest" Text="Click Me!" Clicked="BtnTest_Clicked" />
+
+            <ImageButton Source="git.png" Clicked="BtnTest_Clicked" HeightRequest="100" />
+
+            <RadioButton Content="Option 1.1" GroupName="gp1" CheckedChanged="RadioButton_CheckedChanged" />
+            <RadioButton Content="Option 1.2" GroupName="gp1" />
+            <RadioButton Content="Option 2.1" GroupName="gp2" />
+            <RadioButton Content="Option 2.2" GroupName="gp2" IsChecked="True" />
+
+            <SearchBar x:Name="searchControl" SearchButtonPressed="SearchControl_SearchButtonPressed" />
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem
+                            Text="Favorite"
+                            IconImageSource="git.png"
+                            BackgroundColor="LightGreen"
+                            Invoked="SwipeItem_Invoked"
+                        />
+                        <SwipeItem
+                            Text="Delete"
+                            IconImageSource="git.png"
+                            BackgroundColor="LightPink"
+                            Invoked="SwipeItem_Invoked"
+                        />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <!-- Content -->
+                <Grid HeightRequest="60"
+                      WidthRequest="300"
+                      BackgroundColor="LightGray"
+                >
+                    <Label Text="Swipe right"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                    />
+                </Grid>
+            </SwipeView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

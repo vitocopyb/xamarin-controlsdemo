@@ -8,10 +8,14 @@ namespace ControlsDemo
     {
         public App()
         {
+            //TODO: Ver video sobre las propiedades en custom controls (BindableProperty)
+            //https://www.youtube.com/watch?v=cbmoaD-PDtA
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new PresentationViewsDemo();
+            //MainPage = new PresentationViewsDemo();
+            //MainPage = new CommandsViewsDemo();
+            MainPage = new InputViewsDemo();
         }
 
         protected override void OnStart()
