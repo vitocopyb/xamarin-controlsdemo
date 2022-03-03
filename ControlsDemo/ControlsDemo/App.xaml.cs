@@ -11,6 +11,7 @@ namespace ControlsDemo
             //TODO: Ver video sobre las propiedades en custom controls (BindableProperty)
             //https://www.youtube.com/watch?v=cbmoaD-PDtA
             //https://docs.microsoft.com/en-us/answers/questions/232062/binding-to-custom-control-button-command.html (ejemplo)
+            //https://docs.microsoft.com/en-us/answers/questions/216766/bindableproperty-command-and-it-parameter-are-alwa.html
 
             InitializeComponent();
 
