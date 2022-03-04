@@ -16,11 +16,12 @@ namespace ControlsDemo
             InitializeComponent();
 
             //MainPage = new MainPage();
-            //MainPage = new PresentationViewsDemo();
+            //MainPage = new ActivityIndicatorsDemo();
+            MainPage = new CollectionsDemo();
             //MainPage = new CommandsViewsDemo();
             //MainPage = new InputViewsDemo();
+            //MainPage = new PresentationViewsDemo();
             //MainPage = new TextViewsDemo();
-            MainPage = new ActivityIndicatorsDemo();
         }
 
         protected override void OnStart()
